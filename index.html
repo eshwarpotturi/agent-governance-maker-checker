@@ -261,7 +261,7 @@ footer{color:var(--muted);font-size:.82rem;border-top:1px solid var(--line);padd
     if(timer){ stop(); play(); } });
 
   const d=new Date(R.summary.run_at).toLocaleString("en-IN",{timeZone:"Asia/Kolkata",day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
-  document.getElementById("foot").textContent=`Real run ${d} IST · GPT-4.1-mini via Straive LLM Foundry · ${R.summary.calls} model calls · about ₹${(R.summary.cost*100).toFixed(1)} · synthetic data, fictional clients · the gateway is plain code, the agents are the model.`;
+  document.getElementById("foot").textContent=`Real run ${d} IST · GPT-4.1-mini via LLM Foundry · ${R.summary.calls} model calls · about ₹${(R.summary.cost*100).toFixed(1)} · synthetic data, fictional clients · the gateway is plain code, the agents are the model.`;
 
   restart();
 })();
